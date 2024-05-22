@@ -212,6 +212,11 @@
                   <pattern>org.openjdk.jol.</pattern>
                   <shadedPattern>org.apache.hudi.org.openjdk.jol.</shadedPattern>
                 </relocation>
+
+                  <relocation>
+                      <pattern>org.apache.parquet</pattern>
+                      <shadedPattern>${flink.bundle.shade.prefix}org.apache.parquet</shadedPattern>
+                  </relocation>
               </relocations>
               <filters>
                 <filter>
